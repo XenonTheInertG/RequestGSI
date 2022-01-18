@@ -19,7 +19,7 @@ namespace RequestBot
         {
             bot.OnMessage += request;
             bot.StartReceiving();
-            Console.WriteLine($"bot ({bot.BotId}) has started");
+            Console.WriteLine($"Bot ({bot.BotId}) has started");
             bot.SendTextMessageAsync(chat,
                 "Bot has started!\nyou can use this bot by typing /request <url> <more info>\nfor example:\n/request https://pilotfiber.dl.sourceforge.net/project/havoc-os//tulip/Havoc-OS-v3.12-20210103-tulip-Official.zip don't resign this rom",
                 disableWebPagePreview:true);

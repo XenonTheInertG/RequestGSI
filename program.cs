@@ -68,7 +68,7 @@ namespace RequestBot
 
                     await bot.DeleteMessageAsync(msg.Chat.Id, msg.MessageId);
                     await bot.SendTextMessageAsync(msg.Chat.Id,
-                        $"Hello @{msg.From.Username} ({msg.From.Id})\n Your GSI link has been sent! please wait for it to be made soon!");
+                        $"Hello @{msg.From.Username} ({msg.From.Id})\n Your GSI link has been sent! Please wait for it to be made soon!");
                     string last_name = string.IsNullOrEmpty(msg.From.LastName) ? "null" : msg.From.LastName;
                     string language_code = string.IsNullOrEmpty(msg.From.LanguageCode) ? "null" : msg.From.LanguageCode;
                     await bot.SendTextMessageAsync(chat_send,
